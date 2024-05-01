@@ -4,14 +4,14 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 function FormScreen() {
   return (
 
-    <body style={{ backgroundColor: 'pink', height:'100vh'}}>
+    <body style={{ backgroundColor: 'pink', height:'100vh'}}className="d-flex justify-content-center">
     <Container >
-    <h1 className="d-flex justify-content-center" style={{  paddingTop:'50px' }}>Connect With Our Digital Marketing Experts</h1><br></br>
+    <h3 className="d-flex justify-content-center" style={{  paddingTop:'40px' }}>Connect With Our Digital Marketing Experts</h3><br></br>
      <p className="d-flex justify-content-center" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, harum nesciunt vitae similique odio eius magnam sequi earum ducimus architecto sapiente cumque, laborum cum</p>
       <Row className="justify-content-center my-5">
         <Col xs={19} md={8}>
         
-          <Form style={{  paddingTop:'40px', backgroundColor: 'white', paddingLeft:'10px', paddingRight:'10px',height:'50vh',  width:'110vh'}}>
+          <Form style={{  paddingTop:'30px', backgroundColor: 'white', paddingLeft:'10px', paddingRight:'10px',height:'60vh',  width:'100vh'}}>
             <Row className="align-items-left">
               <Col>
                 <Form.Group className="mb-3" controlId="name">

@@ -9,7 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import  Photo3 from '../assets/bread.png'
 import  Photo2 from '../assets/middle.png'
-
+import  Photo1  from '../assets/camera.png'
 
 
 function Portfolio() {
@@ -17,18 +17,18 @@ function Portfolio() {
     <>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" style={{ height: '90px' }}>
     <Container>
-      <Navbar.Brand href="#home" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >THE WILD KITCHEN</Navbar.Brand>
+      <Navbar.Brand href="portfolio" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >J.ALISSA</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
 
         <Nav className="me-auto" style={{ marginLeft: '7%' }}>
-          <Nav.Link href="#home" style={{ marginLeft: '7%' }}>Home</Nav.Link>
-          <Nav.Link href="#portfolio"style={{ marginLeft: '7%' }}>Portfolio</Nav.Link>
-          <Nav.Link href="#about"style={{ marginLeft: '7%' }}>About</Nav.Link>
-          <Nav.Link href="#books"style={{ marginLeft: '7%' }}>Books</Nav.Link>
-          <Nav.Link href="#blogs"style={{ marginLeft: '7%' }}>Blogs</Nav.Link>
-          <Nav.Link href="#albums"style={{ marginLeft: '7%' }}>ClientAlbums</Nav.Link>
-          <Nav.Link href="#contact"style={{ marginLeft: '7%' }}>Contact</Nav.Link>
+          <Nav.Link href="/" style={{ marginLeft: '7%' }}>Home</Nav.Link>
+          <Nav.Link href="about"style={{ marginLeft: '7%' }}>About</Nav.Link>
+          <Nav.Link href="portfolio"style={{ marginLeft: '7%' }}>Portfolio</Nav.Link>
+          <Nav.Link href="books"style={{ marginLeft: '7%' }}>Books</Nav.Link>
+          <Nav.Link href="blog"style={{ marginLeft: '7%' }}>Blogs</Nav.Link>
+          <Nav.Link href="albums"style={{ marginLeft: '7%' }}>ClientAlbums</Nav.Link>
+          <Nav.Link href="contact"style={{ marginLeft: '7%' }}>Contact</Nav.Link>
         </Nav>
         
       </Navbar.Collapse>
@@ -43,7 +43,7 @@ function Portfolio() {
       <Row>
         <Col xs={8} md={4}>
           <div style={{ position: 'relative',  }}>
-            <img src="https://static.wixstatic.com/media/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg/v1/fill/w_367,h_869,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpghttps://static.wixstatic.com/media/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg/v1/fill/w_367,h_869,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg" 
+            <img src={Photo1}
             alt="Your abc" style={{ width: '100%', height:'90vh', filter: 'brightness(0.6) blur(1px)'}} />
             <div style={{ position: 'absolute', top: '25%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', textAlign: 'center' }}>
               <h1 style={{margin:'2%', marginTop:'8%', fontSize: '45px', fontFamily:'Garamond', }}>EDITORIAL</h1> <br />

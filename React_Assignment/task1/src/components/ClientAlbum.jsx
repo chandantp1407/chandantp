@@ -18,18 +18,18 @@ function Portfolio() {
     <>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" style={{ height: '90px' }}>
     <Container>
-      <Navbar.Brand href="#home" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >THE WILD KITCHEN</Navbar.Brand>
+      <Navbar.Brand href="#home" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >J .ALISSA</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
 
         <Nav className="me-auto" style={{ marginLeft: '7%' }}>
-          <Nav.Link href="#home" style={{ marginLeft: '7%' }}>Home</Nav.Link>
-          <Nav.Link href="#portfolio"style={{ marginLeft: '7%' }}>Portfolio</Nav.Link>
-          <Nav.Link href="#about"style={{ marginLeft: '7%' }}>About</Nav.Link>
-          <Nav.Link href="#books"style={{ marginLeft: '7%' }}>Books</Nav.Link>
-          <Nav.Link href="#blogs"style={{ marginLeft: '7%' }}>Blogs</Nav.Link>
-          <Nav.Link href="#albums"style={{ marginLeft: '7%' }}>ClientAlbums</Nav.Link>
-          <Nav.Link href="#contact"style={{ marginLeft: '7%' }}>Contact</Nav.Link>
+          <Nav.Link href="/" style={{ marginLeft: '7%' }}>Home</Nav.Link>
+          <Nav.Link href="portfolio"style={{ marginLeft: '7%' }}>Portfolio</Nav.Link>
+          <Nav.Link href="about"style={{ marginLeft: '7%' }}>About</Nav.Link>
+          <Nav.Link href="books"style={{ marginLeft: '7%' }}>Books</Nav.Link>
+          <Nav.Link href="blog"style={{ marginLeft: '7%' }}>Blogs</Nav.Link>
+          <Nav.Link href="albums"style={{ marginLeft: '7%' }}>ClientAlbums</Nav.Link>
+          <Nav.Link href="contact"style={{ marginLeft: '7%' }}>Contact</Nav.Link>
         </Nav>
         
       </Navbar.Collapse>
