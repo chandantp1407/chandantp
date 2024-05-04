@@ -1,11 +1,11 @@
 
-import Api from './ApiFetch';
-import './App.css';
+import API from './Api';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div >
-     <Api/>
+     <API/>
     </div>
   );
 }
