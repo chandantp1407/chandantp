@@ -1,39 +1,74 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import '../Css/Carousel.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Hotel8 from './Assests/images/Hotel8.jpg';
+import Hotel7 from './Assests/images/Hotel7.jpg';
+import Hotel9 from './Assests/images/Hotel9.jpg';
+import Hotel10 from './Assests/images/Hotel10.jpg';
 
-import Home1 from './Assests/images/Home1.jpg';
-import About from './About';
-import Rooms from './Rooms';
- import Navbar1 from './Navbar';
-import Contact from './Contact';
-
+import Navbar1 from '../Home/Navbar';
+import Contact from '../Home/Contact';
+import { useState } from 'react';
+import { Container } from 'react-bootstrap';
+import Footer from '../Home/Footer';
+import Newsletter from '../Home/Newsletter';
 
 
 
 const HomePage = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <>
     <Navbar1/>
-      <div style={{ backgroundImage: `url(${Home1})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
-        <Container fluid style={{ backgroundColor: "rgba(0,0,0,0.5)", padding: "1%", color: "white" }}>
-          <Row>
-            <Col xs={6} md={10} style={{ color: "white" }}>
-              <p style={{ font: "48px bluesans", fontStyle: "italic", fontWeight: "bolder", color: "white" }}>Welcome to Hotel-Management-System</p>
-            </Col>
-          </Row><br />
-        </Container>
-
-        <Container fluid style={{ backgroundColor: "rgba(0,0,0,0.5)", color: "white", alignItems: "right", justifyContent: "space-around" }}>
-          <Container >
-            <Row style={{ justifyContent: "center" }}></Row>
-          </Container>
-        </Container>
-      </div>
-      <div>
-        <About/>
-        <Rooms/>
-     <Contact/>
-      </div>
+  <div>
+    <Container>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+      <img src={Hotel7} alt="First slide" className="carousel-image" />
+        <Carousel.Caption>
+          <h3>WELCOME TO HOTEILER</h3>
+          <p>HOSPITALITY IS SIMPLY AN OPPORTUNITY TO SHOW LOVE AND CARE.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={Hotel8} alt="First slide" className="carousel-image" />
+        <Carousel.Caption>
+          <h3>A WARM WELCOME AWAITS YOU HERE!</h3>
+          <p>THE GREAT ADVANTAGE OF A HOTEL IS THAT IT IS A REFUGE FROM A HOME LIFE.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={Hotel9} alt="First slide" className="carousel-image" />
+        <Carousel.Caption>
+          <h3>STAY AND ENJOY YOUR DAY WITH FOOD</h3>
+          <p>
+          "One cannot think well, love well, sleep well, if one has not dined well." 
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={Hotel10} alt="First slide" className="carousel-image" />
+        <Carousel.Caption>
+          <h3>ENJOY YOUR STAY</h3>
+          <p>
+           WAKE ME UP WHEN HOTELS START OFFERING LATE CHECK OUT...
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    </Container>
+    </div>
+  
+    <Newsletter/>
+      <Contact/>
+   
+      <Footer/>
     </>
   );
 }
